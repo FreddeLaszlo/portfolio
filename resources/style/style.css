@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-padding-top: 4.5rem;
+}
+
+p { 
+    margin: 1rem 0; 
+}
+
+h2 {
+    margin: 1.3rem 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0;
+    max-width:1024px;
+    width: 100%;
+    height: 3rem;
+    background-color: white;    
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+main, footer{
+    position: relative;
+    top: 4rem;
+    z-index: 1;
+}
+
+h1 {
+    width: 350px;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+nav {
+    margin: auto 0;
+}
+
+nav a {
+    margin-left: 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    transition: color 0.2s, background-color 0.2s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color:antiquewhite;
+    background-image: url('../images/highlight.png');
+    background-size: 100% 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: color 0.2s, background-color 0.2s;
+    text-shadow: 1px 1px 0 black;
+}
+
+main {
+    margin: 0.5rem 0.6rem;
+}
+
+main p {
+    font-size: 1.3rem;
+}
+
+#projects {
+    text-align: left;
+    list-style-type: circle;
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.2rem;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    padding: 0.3rem 0.3rem;
+}
+
+footer a {
+    margin: 0 0 0 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: 4rem;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    html { font-size: 12px;}
+
+    nav a {     padding: 0.8rem 1rem; }
+}
+
+@media only screen and (max-width: 420px) {
+
+    nav a {     padding: 0.8rem 0.1rem; }
+}
